@@ -1,0 +1,14 @@
+<?php
+
+namespace Modules\Home\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Contracts\View\View;
+
+class HomeController extends Controller
+{
+    public function __invoke(): View
+    {
+        return view('home::index');
+    }
+}
